@@ -190,6 +190,8 @@ class Steps {
 
 class Step {
   constructor(data) {
+    this._title =
+      data && data.title && typeof data.title === "string" ? data.title : "";
     this._label =
       data && data.label && typeof data.label === "string" ? data.label : "";
     this._state =
@@ -204,6 +206,7 @@ class Step {
       return this;
     }
     return new Step({
+      title: this._title,
       label: this._label,
       state: newState
     });
@@ -221,6 +224,16 @@ class Step {
     return this.setState(StepState.INVALID);
   }
 
+  setTitle(title) {
+    if (title === this._title) {
+      return this;
+    }
+    return new Step({
+      title,
+      state: this._state
+    });
+  }
+
   setLabel(label) {
     if (label === this._label) {
       return this;
@@ -229,6 +242,10 @@ class Step {
       label,
       state: this._state
     });
+  }
+
+  get title() {
+    return this._title;
   }
 
   get label() {

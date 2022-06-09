@@ -1,6 +1,6 @@
 {
-  "name": "awesome-react-steps",
-  "version": "0.1.7",
+  "name": "new-awesome-react-steps",
+  "version": "0.1.9",
   "description": "A set of steppers components for using in react projects",
   "main": "lib/js/index.js",
   "keywords": [
@@ -50,7 +50,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bruno02221/awesome-react-steps"
+    "url": "https://github.com/viethakio/awesome-react-steps"
   },
   "dependencies": {
     "classnames": "^2.2.5",
