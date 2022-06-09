@@ -30,7 +30,7 @@ const Arrows = ({
             style={numberStyle}
             className={classnames("Arrows--step--number", numberClassName)}
           >
-            {index + 1}
+            {step.title}
           </span>
           <span
             style={labelStyle}
