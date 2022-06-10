@@ -24,9 +24,8 @@
 .Arrows--step--content {
   box-sizing: border-box;
   display: flex;
-  padding: 0 20px;
-  justify-content: center;
-  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
 }
 
 .Arrows--step--number {
@@ -36,7 +35,7 @@
 }
 
 .Arrows--step--number::after {
-  content: ".";
+  /* content: "."; */
   margin-right: 4px;
 }
 
@@ -56,7 +55,7 @@
 
 @media (min-width: 540px) {
   .Arrows--step--number {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .Arrows--step--label {
